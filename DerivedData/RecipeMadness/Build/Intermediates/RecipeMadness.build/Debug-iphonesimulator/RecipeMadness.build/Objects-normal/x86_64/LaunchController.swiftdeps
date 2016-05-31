@@ -1,0 +1,237 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "LaunchController"
+provides-nominal:
+- "C13RecipeMadness16LaunchController"
+provides-member:
+- ["C13RecipeMadness16LaunchController", ""]
+provides-dynamic-lookup:
+- "fgewfew"
+- "viewDidLoad"
+- "prepareForSegue"
+- "didReceiveMemoryWarning"
+depends-top-level:
+- "UIStoryboardSegue"
+- "LaunchController"
+- !private "TabBarController"
+- !private "StringLiteralType"
+- !private "~="
+- "UIViewController"
+- "AnyObject"
+depends-member:
+- !private ["Ps9AnyObject", "destinationViewController"]
+- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "fgewfew"]
+- !private ["Ps9AnyObject", "identifier"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "prepareForSegue"]
+- !private ["Ps9AnyObject", "selectedIndex"]
+- ["Ps9AnyObject", "viewDidLoad"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- !private ["Ps11CVarArgType", "destinationViewController"]
+- ["Ps11CVarArgType", "didReceiveMemoryWarning"]
+- ["Ps11CVarArgType", "fgewfew"]
+- !private ["Ps11CVarArgType", "identifier"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "prepareForSegue"]
+- !private ["Ps11CVarArgType", "selectedIndex"]
+- ["Ps11CVarArgType", "viewDidLoad"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps28CustomDebugStringConvertible", "destinationViewController"]
+- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "fgewfew"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "prepareForSegue"]
+- !private ["Ps28CustomDebugStringConvertible", "selectedIndex"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "destinationViewController"]
+- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "fgewfew"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "prepareForSegue"]
+- !private ["Ps23CustomStringConvertible", "selectedIndex"]
+- ["Ps23CustomStringConvertible", "viewDidLoad"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "destinationViewController"]
+- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "fgewfew"]
+- !private ["Ps9Equatable", "identifier"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "prepareForSegue"]
+- !private ["Ps9Equatable", "selectedIndex"]
+- ["Ps9Equatable", "viewDidLoad"]
+- ["Ps9Equatable", ""]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "destinationViewController"]
+- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "fgewfew"]
+- !private ["Ps8Hashable", "identifier"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "prepareForSegue"]
+- !private ["Ps8Hashable", "selectedIndex"]
+- ["Ps8Hashable", "viewDidLoad"]
+- ["Ps8Hashable", ""]
+- ["C13RecipeMadness16LaunchController", "AnyObject"]
+- !private ["C13RecipeMadness16LaunchController", "TabBarController"]
+- ["C13RecipeMadness16LaunchController", "UIStoryboardSegue"]
+- ["C13RecipeMadness16LaunchController", "deinit"]
+- ["C13RecipeMadness16LaunchController", "didReceiveMemoryWarning"]
+- ["C13RecipeMadness16LaunchController", "fgewfew"]
+- ["C13RecipeMadness16LaunchController", "init"]
+- ["C13RecipeMadness16LaunchController", "prepareForSegue"]
+- ["C13RecipeMadness16LaunchController", "viewDidLoad"]
+- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "fgewfew"]
+- ["PSo8NSCoding", "init"]
+- ["PSo8NSCoding", "prepareForSegue"]
+- !private ["PSo8NSCoding", "selectedIndex"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "fgewfew"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "prepareForSegue"]
+- !private ["PSo26NSExtensionRequestHandling", "selectedIndex"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "TabBarController"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
+- !private ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "destinationViewController"]
+- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "fgewfew"]
+- !private ["CSo8NSObject", "identifier"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "prepareForSegue"]
+- !private ["CSo8NSObject", "selectedIndex"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "destinationViewController"]
+- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "fgewfew"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "prepareForSegue"]
+- !private ["PSo16NSObjectProtocol", "selectedIndex"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo8NSString", "deinit"]
+- !private ["Vs5Range", "deinit"]
+- !private ["SS", "deinit"]
+- !private ["C13RecipeMadness16TabBarController", "selectedIndex"]
+- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "fgewfew"]
+- ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "prepareForSegue"]
+- !private ["PSo21UIAppearanceContainer", "selectedIndex"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "fgewfew"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "prepareForSegue"]
+- !private ["PSo18UIContentContainer", "selectedIndex"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "fgewfew"]
+- ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "prepareForSegue"]
+- !private ["PSo18UIFocusEnvironment", "selectedIndex"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- ["CSo11UIResponder", "AnyObject"]
+- !private ["CSo11UIResponder", "TabBarController"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
+- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "fgewfew"]
+- ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "prepareForSegue"]
+- !private ["CSo11UIResponder", "selectedIndex"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "fgewfew"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "prepareForSegue"]
+- !private ["PSo16UIStateRestoring", "selectedIndex"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["CSo17UIStoryboardSegue", "destinationViewController"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
+- !private ["CSo18UITabBarController", "selectedIndex"]
+- !private ["PSo16UITabBarDelegate", "selectedIndex"]
+- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "fgewfew"]
+- ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "prepareForSegue"]
+- !private ["PSo18UITraitEnvironment", "selectedIndex"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- ["CSo16UIViewController", "AnyObject"]
+- !private ["CSo16UIViewController", "TabBarController"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
+- !private ["CSo16UIViewController", "deinit"]
+- ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "fgewfew"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "prepareForSegue"]
+- !private ["CSo16UIViewController", "selectedIndex"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sb"
+- !private "Ps25BooleanLiteralConvertible"
+- !private "Ps11BooleanType"
+- "Ps11CVarArgType"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- "Ps8Hashable"
+- "C13RecipeMadness16LaunchController"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo8NSString"
+- !private "Vs5Range"
+- !private "SS"
+- !private "C13RecipeMadness16TabBarController"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- !private "CSo17UIStoryboardSegue"
+- !private "CSo18UITabBarController"
+- !private "PSo16UITabBarDelegate"
+- "PSo18UITraitEnvironment"
+- "CSo16UIViewController"
+- !private "Ps33_BuiltinBooleanLiteralConvertible"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "eadcb86423ff52311d12f5fd36d253d4"

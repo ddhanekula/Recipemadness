@@ -1,0 +1,1814 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="89b-lV-tpm">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Controller-->
+        <scene sceneID="TLZ-aN-9eg">
+            <objects>
+                <viewController id="89b-lV-tpm" customClass="LaunchController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HrP-8Y-gxN"/>
+                        <viewControllerLayoutGuide type="bottom" id="bP1-iA-z3x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2PC-kP-2Nd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doO-ia-D8D">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="88" y="146" width="201" height="36"/>
+                                </variation>
+                                <connections>
+                                    <action selector="fgewfew:" destination="89b-lV-tpm" eventType="touchUpInside" id="rJb-UQ-Rgb"/>
+                                    <segue destination="2y3-d1-Qmi" kind="modal" identifier="RecipeBook" id="nDv-VM-yMt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxN-pU-QKI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="88" y="243" width="201" height="33"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="2y3-d1-Qmi" kind="modal" identifier="MealCalendar" id="BlI-B8-xsi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3F-s4-1Mh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="88" y="333" width="201" height="33"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="2y3-d1-Qmi" kind="modal" identifier="ShoppingCart" id="TuF-gI-SO0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeScreen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="jqd-7O-hG7">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="321" height="480"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="doO-ia-D8D"/>
+                                <exclude reference="IxN-pU-QKI"/>
+                                <exclude reference="x3F-s4-1Mh"/>
+                                <exclude reference="jqd-7O-hG7"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="doO-ia-D8D"/>
+                                <include reference="IxN-pU-QKI"/>
+                                <include reference="x3F-s4-1Mh"/>
+                                <include reference="jqd-7O-hG7"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBh-ks-AFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-889.5" y="-255"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="XAH-46-JTW">
+            <objects>
+                <viewController id="fmO-xy-99H" customClass="HomeViewController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uks-oF-NVO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ly3-dS-dIx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7To-ZT-gJi" customClass="h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pbH-mI-fTQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-1" y="-34" width="323" height="482"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="pbH-mI-fTQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="pbH-mI-fTQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" id="US8-fM-bu0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzq-Ws-6ck" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1359" y="1162"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SdN-ZV-hqw">
+            <objects>
+                <tabBarController id="2y3-d1-Qmi" customClass="TabBarController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dd3-iG-Ofh"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="opT-R5-pcz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fmO-xy-99H" kind="relationship" relationship="viewControllers" id="aGw-Xr-tgs"/>
+                        <segue destination="i1l-1J-hAL" kind="relationship" relationship="viewControllers" id="GXC-dW-L3v"/>
+                        <segue destination="QCu-xE-uCu" kind="relationship" relationship="viewControllers" id="M0d-Hf-7TK"/>
+                        <segue destination="Yas-dz-Cvg" kind="relationship" relationship="viewControllers" id="fRt-jk-jez"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCR-f6-Tao" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="-245"/>
+        </scene>
+        <!--Recipe Book-->
+        <scene sceneID="9NY-pb-s95">
+            <objects>
+                <navigationController id="i1l-1J-hAL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Recipe Book" image="Book" id="ZC9-JE-dzy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sfo-vh-wt7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OXt-rU-Yx3" kind="relationship" relationship="rootViewController" id="0sh-As-vFx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Df-lw-ea4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.5" y="-245"/>
+        </scene>
+        <!--My meal calendar-->
+        <scene sceneID="a1t-NF-6gP">
+            <objects>
+                <tableViewController id="LGU-z2-mlT" customClass="MealCalendarController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="42" sectionHeaderHeight="22" sectionFooterHeight="22" id="bQC-CF-RQ0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="42" id="vHE-r7-XJ5" customClass="MealCalendarViewCell" customModule="RecipeMadness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="86" width="600" height="42"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vHE-r7-XJ5" id="YCZ-oA-vE0">
+                                    <rect key="frame" x="0.0" y="0.0" width="567" height="41.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iWd-Yd-oDD">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="233" y="2" width="59" height="37"/>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Brv-eD-3g9">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="20" y="2" width="93" height="21"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYS-rV-IUK">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="10"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="20" y="25" width="217" height="17"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64t-Np-0SK">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="100" y="2" width="119" height="21"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="iWd-Yd-oDD"/>
+                                            <exclude reference="Brv-eD-3g9"/>
+                                            <exclude reference="LYS-rV-IUK"/>
+                                            <exclude reference="64t-Np-0SK"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="iWd-Yd-oDD"/>
+                                            <include reference="Brv-eD-3g9"/>
+                                            <include reference="LYS-rV-IUK"/>
+                                            <include reference="64t-Np-0SK"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Date" destination="Brv-eD-3g9" id="0yD-aT-oPx"/>
+                                    <outlet property="Image" destination="iWd-Yd-oDD" id="DxW-id-bmK"/>
+                                    <outlet property="RecipeName" destination="LYS-rV-IUK" id="Ij1-UJ-zBB"/>
+                                    <outlet property="Timing" destination="64t-Np-0SK" id="Ipp-iA-fyb"/>
+                                    <segue destination="ipo-7p-RjD" kind="push" identifier="EditMealPlan" id="rIs-uD-A6q"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LGU-z2-mlT" id="C7Y-mZ-Trv"/>
+                            <outlet property="delegate" destination="LGU-z2-mlT" id="0Tx-oJ-aY2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My meal calendar" id="hKN-oU-Nci">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="DvC-B8-4XX">
+                            <connections>
+                                <segue destination="i45-nl-QKx" kind="push" id="PQT-MV-Wx9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wG-29-V9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.5" y="442"/>
+        </scene>
+        <!--Edit meal plan-->
+        <scene sceneID="NdF-oG-Kum">
+            <objects>
+                <viewController id="ipo-7p-RjD" customClass="EditMealPlanController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TqG-r1-Odw"/>
+                        <viewControllerLayoutGuide type="bottom" id="CS1-QD-9EK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FJf-jN-X3q">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Select the date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgG-Mc-CvE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="72" width="310" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Choose a recipe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TrF-Jn-3Mg">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="139" width="310" height="21"/>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="o8I-ie-faw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" verticalHuggingPriority="150" verticalCompressionResistancePriority="500" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" id="wm0-V7-NFR">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="wm0-V7-NFR" id="gjr-wp-EMu">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="58" y="168" width="226" height="150"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="ipo-7p-RjD" id="1VH-yZ-Hp4"/>
+                                    <outlet property="delegate" destination="ipo-7p-RjD" id="7i2-5T-gMd"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" No.of serves" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA5-bY-x5k">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="326" width="155" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter no. of serves" textAlignment="center" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SBL-CX-jWM">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="24" y="355" width="123" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="checkServesValue:" destination="ipo-7p-RjD" eventType="editingChanged" id="g5Z-cv-kjp"/>
+                                    <action selector="numOfServesChange:" destination="ipo-7p-RjD" eventType="touchDown" id="hpw-09-QOs"/>
+                                    <action selector="numOfServesTouch:" destination="ipo-7p-RjD" eventType="editingDidEnd" id="SZd-Vb-JcG"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No date selected" textAlignment="center" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gTk-m3-wcf">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.87572174223213095" blue="0.78477779004849535" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="58" y="101" width="226" height="30"/>
+                                </variation>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Schedule" translatesAutoresizingMaskIntoConstraints="NO" id="QMh-9C-Arc">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="260" y="106" width="20" height="19"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Timing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lre-Mo-RcE">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="179" y="326" width="147" height="21"/>
+                                </variation>
+                            </label>
+                            <pickerView contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="xSJ-4P-hPa">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="102" y="345" width="300" height="50"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="ipo-7p-RjD" id="xsb-Wr-P14"/>
+                                    <outlet property="delegate" destination="ipo-7p-RjD" id="Qby-f6-loa"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dgG-Mc-CvE"/>
+                                <exclude reference="TrF-Jn-3Mg"/>
+                                <exclude reference="o8I-ie-faw"/>
+                                <exclude reference="kA5-bY-x5k"/>
+                                <exclude reference="SBL-CX-jWM"/>
+                                <exclude reference="gTk-m3-wcf"/>
+                                <exclude reference="QMh-9C-Arc"/>
+                                <exclude reference="lre-Mo-RcE"/>
+                                <exclude reference="xSJ-4P-hPa"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dgG-Mc-CvE"/>
+                                <include reference="TrF-Jn-3Mg"/>
+                                <include reference="o8I-ie-faw"/>
+                                <include reference="kA5-bY-x5k"/>
+                                <include reference="SBL-CX-jWM"/>
+                                <include reference="gTk-m3-wcf"/>
+                                <include reference="QMh-9C-Arc"/>
+                                <include reference="lre-Mo-RcE"/>
+                                <include reference="xSJ-4P-hPa"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit meal plan" id="upp-lE-MUK">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="cuZ-Wg-Llm">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oqY-SZ-mHr">
+                                <rect key="frame" x="534" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveMealCalendar:" destination="ipo-7p-RjD" eventType="touchUpInside" id="ABd-jX-PBl"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TimingPicker" destination="xSJ-4P-hPa" id="oes-fV-4O5"/>
+                        <outlet property="lblHeader1" destination="dgG-Mc-CvE" id="gKZ-Wu-b1A"/>
+                        <outlet property="lblHeader2" destination="TrF-Jn-3Mg" id="ART-Dj-Q8c"/>
+                        <outlet property="lblHeader3" destination="kA5-bY-x5k" id="UbG-o7-lO6"/>
+                        <outlet property="lblHeader4" destination="lre-Mo-RcE" id="4vw-eo-vCC"/>
+                        <outlet property="mealDate" destination="gTk-m3-wcf" id="Dtc-ee-ZCp"/>
+                        <outlet property="numOfServesTXT" destination="SBL-CX-jWM" id="QK8-1v-jH8"/>
+                        <outlet property="recipeTableView" destination="o8I-ie-faw" id="Lyg-cp-0ld"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xlb-P5-AYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592.5" y="1151"/>
+        </scene>
+        <!--Plan your meal-->
+        <scene sceneID="zMd-fX-mxW">
+            <objects>
+                <viewController id="i45-nl-QKx" customClass="PlanMealController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0qM-yR-Onr"/>
+                        <viewControllerLayoutGuide type="bottom" id="2BI-A8-w7e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iip-mW-Xb7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Select the date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRC-3g-FT6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="72" width="310" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Choose a recipe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFP-VL-kPe">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="139" width="310" height="21"/>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Y1s-gB-YEv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" verticalHuggingPriority="150" verticalCompressionResistancePriority="500" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" id="V3n-iT-wLc">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="V3n-iT-wLc" id="s0N-MH-hyY">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="50" y="168" width="226" height="150"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="i45-nl-QKx" id="BKN-WN-nnu"/>
+                                    <outlet property="delegate" destination="i45-nl-QKx" id="5b7-UZ-vIO"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" No.of serves" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhI-hm-n4R">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="8" y="326" width="155" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter no. of serves" textAlignment="center" minimumFontSize="12" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RQa-i6-ecz">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="355" width="123" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="checkServesValue:" destination="i45-nl-QKx" eventType="editingChanged" id="fvw-xj-aWy"/>
+                                    <action selector="numOfServesChange:" destination="i45-nl-QKx" eventType="editingDidBegin" id="64k-8B-grc"/>
+                                    <action selector="numOfServesTouch:" destination="i45-nl-QKx" eventType="touchDown" id="4mV-ay-agu"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select meal date" textAlignment="center" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="h7Y-zS-qr8">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="50" y="101" width="226" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="mealDateChange:" destination="i45-nl-QKx" eventType="editingDidBegin" id="6CU-cI-0cI"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Schedule" translatesAutoresizingMaskIntoConstraints="NO" id="haK-ab-zwT">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="252" y="106" width="20" height="19"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Timing" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05f-Tr-IAc">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="171" y="326" width="147" height="21"/>
+                                </variation>
+                            </label>
+                            <pickerView contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="AjR-MJ-Cdt">
+                                <rect key="frame" x="0.0" y="-162" width="320" height="162"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="345" width="300" height="50"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="i45-nl-QKx" id="85s-Fo-9KY"/>
+                                    <outlet property="delegate" destination="i45-nl-QKx" id="lrg-2Z-Eh5"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="GRC-3g-FT6"/>
+                                <exclude reference="HFP-VL-kPe"/>
+                                <exclude reference="Y1s-gB-YEv"/>
+                                <exclude reference="EhI-hm-n4R"/>
+                                <exclude reference="RQa-i6-ecz"/>
+                                <exclude reference="h7Y-zS-qr8"/>
+                                <exclude reference="haK-ab-zwT"/>
+                                <exclude reference="05f-Tr-IAc"/>
+                                <exclude reference="AjR-MJ-Cdt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="GRC-3g-FT6"/>
+                                <include reference="HFP-VL-kPe"/>
+                                <include reference="Y1s-gB-YEv"/>
+                                <include reference="EhI-hm-n4R"/>
+                                <include reference="RQa-i6-ecz"/>
+                                <include reference="h7Y-zS-qr8"/>
+                                <include reference="haK-ab-zwT"/>
+                                <include reference="05f-Tr-IAc"/>
+                                <include reference="AjR-MJ-Cdt"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Plan your meal" id="FOy-8u-fTy">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Bsy-jd-TAn">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dyZ-EU-0cA">
+                                <rect key="frame" x="534" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SaveMealCalendar:" destination="i45-nl-QKx" eventType="touchUpInside" id="4ID-qd-vlb"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="TimingPicker" destination="AjR-MJ-Cdt" id="G8C-py-8MO"/>
+                        <outlet property="lblHeader1" destination="GRC-3g-FT6" id="XQJ-KE-6qo"/>
+                        <outlet property="lblHeader2" destination="HFP-VL-kPe" id="Zx2-gL-NUs"/>
+                        <outlet property="lblHeader3" destination="EhI-hm-n4R" id="lBh-oO-cOI"/>
+                        <outlet property="lblHeader4" destination="05f-Tr-IAc" id="JEV-kC-1at"/>
+                        <outlet property="mealDate" destination="h7Y-zS-qr8" id="9xk-Nj-vue"/>
+                        <outlet property="numOfServesTXT" destination="RQa-i6-ecz" id="o6m-Si-yUo"/>
+                        <outlet property="recipeTableView" destination="Y1s-gB-YEv" id="rR9-Vf-Nul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3f-wE-KRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="457"/>
+        </scene>
+        <!--Recipe Name-->
+        <scene sceneID="TOr-f6-YEI">
+            <objects>
+                <viewController id="Qdy-OY-RZe" customClass="EditRecipeController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FVf-wP-f2m"/>
+                        <viewControllerLayoutGuide type="bottom" id="yLm-a8-1gC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Muw-s7-sQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Ingredients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9g-Pv-vaC">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="4" y="136" width="308" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Units" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SS6-mx-hxF">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="109" y="193" width="79" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="textChanged:" destination="Qdy-OY-RZe" eventType="editingChanged" id="5Lt-CV-tMZ"/>
+                                    <action selector="unitsChanged:" destination="Qdy-OY-RZe" eventType="editingChanged" id="LcE-s5-uZ6"/>
+                                    <outlet property="delegate" destination="Qdy-OY-RZe" id="SAK-BN-fqh"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Qty" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="025-81-Cko">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="193" width="77" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="Qdy-OY-RZe" id="ap4-6U-8aL"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="24" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="iwg-dI-npK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="24" id="qaP-IP-e5O" customClass="IngedientViewCell" customModule="RecipeMadness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qaP-IP-e5O" id="fmR-0w-oqa">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="23.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzr-Wj-frF">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="35" y="3" width="146" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Units" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-j7-p5j">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="238" y="3" width="40" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azN-Pf-4wH">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="166" y="3" width="64" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj2-ni-EXJ">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="8" y="3" width="21" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="qzr-Wj-frF"/>
+                                                    <exclude reference="LhH-j7-p5j"/>
+                                                    <exclude reference="azN-Pf-4wH"/>
+                                                    <exclude reference="Bj2-ni-EXJ"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="qzr-Wj-frF"/>
+                                                    <include reference="LhH-j7-p5j"/>
+                                                    <include reference="azN-Pf-4wH"/>
+                                                    <include reference="Bj2-ni-EXJ"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Name" destination="qzr-Wj-frF" id="iai-Rr-haI"/>
+                                            <outlet property="Qty" destination="azN-Pf-4wH" id="YSn-cy-ix5"/>
+                                            <outlet property="SNO" destination="Bj2-ni-EXJ" id="2g8-pH-bRb"/>
+                                            <outlet property="Units" destination="LhH-j7-p5j" id="4Ds-x3-gYn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="4" y="250" width="308" height="272"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qdy-OY-RZe" id="Xr5-Pc-kI7"/>
+                                    <outlet property="delegate" destination="Qdy-OY-RZe" id="fKQ-mJ-uzO"/>
+                                </connections>
+                            </tableView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-hJ-qun">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="4" y="64" width="82" height="64"/>
+                                </variation>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Recipe procedure" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="d3P-Wo-vZK">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.019379380931556615" green="0.35520812626900872" blue="0.94178838315217395" alpha="0.28000000000000003" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="68" width="218" height="31"/>
+                                </variation>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKv-Eh-8Wu">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="4" y="227" width="308" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRj-wN-RVv">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="35" y="227" width="146" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Units" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYU-ge-jvk">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="239" y="227" width="40" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3g0-pM-pZ1">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="167" y="227" width="64" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSs-DI-o4a">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="9" y="227" width="21" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of Serves" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yqk-9X-5EL">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="107" width="106" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingredient Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-0r-Tyg">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="160" width="208" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ingredientNameChanged:" destination="Qdy-OY-RZe" eventType="editingChanged" id="A09-7K-BVo"/>
+                                    <action selector="textChanged:" destination="Qdy-OY-RZe" eventType="editingChanged" id="WDV-Pw-P17"/>
+                                    <outlet property="delegate" destination="Qdy-OY-RZe" id="LUl-Ac-40M"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Serves" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Hq-Uy-3RK">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="201" y="103" width="86" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="checkServesValue:" destination="Qdy-OY-RZe" eventType="editingChanged" id="Uf5-A6-rgD"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkA-mA-iCd">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="201" y="198" width="30" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="AddIngredient:" destination="Qdy-OY-RZe" eventType="touchUpInside" id="As1-YP-BxE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="a9g-Pv-vaC"/>
+                                <exclude reference="SS6-mx-hxF"/>
+                                <exclude reference="025-81-Cko"/>
+                                <exclude reference="iwg-dI-npK"/>
+                                <exclude reference="zdg-hJ-qun"/>
+                                <exclude reference="d3P-Wo-vZK"/>
+                                <exclude reference="hKv-Eh-8Wu"/>
+                                <exclude reference="fRj-wN-RVv"/>
+                                <exclude reference="fYU-ge-jvk"/>
+                                <exclude reference="3g0-pM-pZ1"/>
+                                <exclude reference="dSs-DI-o4a"/>
+                                <exclude reference="Yqk-9X-5EL"/>
+                                <exclude reference="iFf-0r-Tyg"/>
+                                <exclude reference="4Hq-Uy-3RK"/>
+                                <exclude reference="fkA-mA-iCd"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="a9g-Pv-vaC"/>
+                                <include reference="SS6-mx-hxF"/>
+                                <include reference="025-81-Cko"/>
+                                <include reference="iwg-dI-npK"/>
+                                <include reference="zdg-hJ-qun"/>
+                                <include reference="d3P-Wo-vZK"/>
+                                <include reference="hKv-Eh-8Wu"/>
+                                <include reference="fRj-wN-RVv"/>
+                                <include reference="fYU-ge-jvk"/>
+                                <include reference="3g0-pM-pZ1"/>
+                                <include reference="dSs-DI-o4a"/>
+                                <include reference="Yqk-9X-5EL"/>
+                                <include reference="iFf-0r-Tyg"/>
+                                <include reference="4Hq-Uy-3RK"/>
+                                <include reference="fkA-mA-iCd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Recipe Name" id="cPY-Wo-S8G">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="KGs-Sf-a1L">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6ZP-X6-nOE">
+                                <rect key="frame" x="534" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveRecipe:" destination="Qdy-OY-RZe" eventType="touchUpInside" id="5uB-qE-ByJ"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="saveRecipe:" destination="Qdy-OY-RZe" id="1SW-oU-di6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="lblIngredientBar" destination="a9g-Pv-vaC" id="MMY-6N-zDE"/>
+                        <outlet property="lblIngredientListBar" destination="hKv-Eh-8Wu" id="Jgj-Mi-Drt"/>
+                        <outlet property="recipeImage" destination="zdg-hJ-qun" id="BML-aA-qxv"/>
+                        <outlet property="tableViewIngredientsToSave" destination="iwg-dI-npK" id="web-BE-AJz"/>
+                        <outlet property="txtName" destination="iFf-0r-Tyg" id="mPY-ut-oCh"/>
+                        <outlet property="txtQty" destination="025-81-Cko" id="dNU-b3-XTQ"/>
+                        <outlet property="txtRecipeProcedure" destination="d3P-Wo-vZK" id="wUL-QN-0ZK"/>
+                        <outlet property="txtServes" destination="4Hq-Uy-3RK" id="GEL-Z1-8gT"/>
+                        <outlet property="txtUnits" destination="SS6-mx-hxF" id="isk-LQ-sPH"/>
+                        <segue destination="IgS-MW-DGC" kind="push" identifier="EditRecipe" id="O8a-mT-s6x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17Q-2A-xoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017.5" y="456"/>
+        </scene>
+        <!--Shopping List-->
+        <scene sceneID="LCA-li-Xip">
+            <objects>
+                <viewController id="Yas-dz-Cvg" customClass="ShoppingListController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sgB-gT-ahs"/>
+                        <viewControllerLayoutGuide type="bottom" id="CMz-7F-J6D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KQV-nk-08o">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter from date" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="gd8-fU-XgJ">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="57" width="132" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="fromDateBegin:" destination="Yas-dz-Cvg" eventType="editingDidBegin" id="YnJ-s0-vnc"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter to date" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="VL3-dN-pfa">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="176" y="57" width="127" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="toDateBegin:" destination="Yas-dz-Cvg" eventType="editingDidBegin" id="CiW-SY-ARS"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Schedule" translatesAutoresizingMaskIntoConstraints="NO" id="mJ0-00-p9A">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="271" y="60" width="20" height="21"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxF-a8-X1G">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Shopping list">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="96" y="90" width="123" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="FillTheShoppingListView:" destination="Yas-dz-Cvg" eventType="touchUpInside" id="cla-KJ-3g4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Schedule" translatesAutoresizingMaskIntoConstraints="NO" id="2eN-8S-heR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="116" y="62" width="20" height="19"/>
+                                </variation>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1aS-XE-vRh">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <segments>
+                                    <segment title="To Buy"/>
+                                    <segment title="Purchased"/>
+                                    <segment title="Recipes"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="124" width="235" height="29"/>
+                                </variation>
+                                <connections>
+                                    <action selector="purchaseListChanged:" destination="Yas-dz-Cvg" eventType="valueChanged" id="Ve3-cD-kJe"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="32" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="2DG-ST-cVk">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" verticalHuggingPriority="150" verticalCompressionResistancePriority="500" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="32" id="JZe-28-ZSN" customClass="ShoppingCell" customModule="RecipeMadness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JZe-28-ZSN" id="N6b-Nt-cwc">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="31.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nlm-5C-o4C">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="24" y="6" width="25" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEa-Uu-BI8">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="169" y="5" width="62" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt0-mc-cGg">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="57" y="6" width="127" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oql-Vd-a75">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="242" y="5" width="62" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="Nlm-5C-o4C"/>
+                                                    <exclude reference="bEa-Uu-BI8"/>
+                                                    <exclude reference="Pt0-mc-cGg"/>
+                                                    <exclude reference="oql-Vd-a75"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="Nlm-5C-o4C"/>
+                                                    <include reference="bEa-Uu-BI8"/>
+                                                    <include reference="Pt0-mc-cGg"/>
+                                                    <include reference="oql-Vd-a75"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Name" destination="Pt0-mc-cGg" id="8AO-UU-5bT"/>
+                                            <outlet property="Qty" destination="bEa-Uu-BI8" id="Trf-oe-KDt"/>
+                                            <outlet property="SNO" destination="Nlm-5C-o4C" id="n2H-2V-ful"/>
+                                            <outlet property="Units" destination="oql-Vd-a75" id="5nM-lT-mUf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="11" y="165" width="290" height="364"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yas-dz-Cvg" id="Hri-op-T0H"/>
+                                    <outlet property="delegate" destination="Yas-dz-Cvg" id="QWp-hS-Zi2"/>
+                                </connections>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="32" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pwY-1O-ReR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" verticalHuggingPriority="150" verticalCompressionResistancePriority="500" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="32" id="W1u-if-y2j" customClass="ShoppingCell" customModule="RecipeMadness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="W1u-if-y2j" id="Bek-fo-I5H">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="31.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymm-Vm-Dj0">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="24" y="4" width="25" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bE9-8w-Gqg">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="57" y="4" width="127" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCJ-uC-3Jo">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="219" y="4" width="39" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aay-KI-5fo">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="154" y="4" width="62" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="ymm-Vm-Dj0"/>
+                                                    <exclude reference="bE9-8w-Gqg"/>
+                                                    <exclude reference="FCJ-uC-3Jo"/>
+                                                    <exclude reference="aay-KI-5fo"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="ymm-Vm-Dj0"/>
+                                                    <include reference="bE9-8w-Gqg"/>
+                                                    <include reference="FCJ-uC-3Jo"/>
+                                                    <include reference="aay-KI-5fo"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Name" destination="bE9-8w-Gqg" id="Tw8-2l-QKR"/>
+                                            <outlet property="Qty" destination="aay-KI-5fo" id="H24-r3-nvM"/>
+                                            <outlet property="SNO" destination="ymm-Vm-Dj0" id="vNg-x9-x3c"/>
+                                            <outlet property="Units" destination="FCJ-uC-3Jo" id="jqL-yh-JdK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="165" width="290" height="364"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yas-dz-Cvg" id="BEq-N3-ohy"/>
+                                    <outlet property="delegate" destination="Yas-dz-Cvg" id="zHS-Qz-rRi"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My shopping list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0k-t3-XD9">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="64" y="20" width="184" height="29"/>
+                                </variation>
+                            </label>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Save1" translatesAutoresizingMaskIntoConstraints="NO" id="YEF-QP-SSU">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="253" y="107" width="50" height="46"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-Oe-6b5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <state key="normal" title="Save List">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="256" y="143" width="49" height="12"/>
+                                </variation>
+                                <connections>
+                                    <action selector="saveShoppingList:" destination="Yas-dz-Cvg" eventType="touchUpInside" id="wey-cY-PBi"/>
+                                </connections>
+                            </button>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="24" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="kdv-7i-ykD">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="24" id="0P4-7D-4bX" customClass="ShoppingRecipeCell" customModule="RecipeMadness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0P4-7D-4bX" id="4SQ-eE-ae1">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="23.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74Z-44-cWw">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="19" y="1" width="42" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOY-la-yby">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="59" y="1" width="163" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="74Z-44-cWw"/>
+                                                    <exclude reference="XOY-la-yby"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="74Z-44-cWw"/>
+                                                    <include reference="XOY-la-yby"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Name" destination="XOY-la-yby" id="h9P-Za-1SX"/>
+                                            <outlet property="SNO" destination="74Z-44-cWw" id="ThL-4R-DdF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="11" y="167" width="289" height="362"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yas-dz-Cvg" id="rkF-sO-yuY"/>
+                                    <outlet property="delegate" destination="Yas-dz-Cvg" id="SIl-VV-ePg"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="get" translatesAutoresizingMaskIntoConstraints="NO" id="qPi-09-m0C">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="187" y="90" width="32" height="32"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gd8-fU-XgJ"/>
+                                <exclude reference="VL3-dN-pfa"/>
+                                <exclude reference="mJ0-00-p9A"/>
+                                <exclude reference="NxF-a8-X1G"/>
+                                <exclude reference="2eN-8S-heR"/>
+                                <exclude reference="1aS-XE-vRh"/>
+                                <exclude reference="2DG-ST-cVk"/>
+                                <exclude reference="pwY-1O-ReR"/>
+                                <exclude reference="q0k-t3-XD9"/>
+                                <exclude reference="YEF-QP-SSU"/>
+                                <exclude reference="CNe-Oe-6b5"/>
+                                <exclude reference="kdv-7i-ykD"/>
+                                <exclude reference="qPi-09-m0C"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gd8-fU-XgJ"/>
+                                <include reference="VL3-dN-pfa"/>
+                                <include reference="mJ0-00-p9A"/>
+                                <include reference="NxF-a8-X1G"/>
+                                <include reference="2eN-8S-heR"/>
+                                <include reference="1aS-XE-vRh"/>
+                                <include reference="2DG-ST-cVk"/>
+                                <include reference="pwY-1O-ReR"/>
+                                <include reference="q0k-t3-XD9"/>
+                                <include reference="YEF-QP-SSU"/>
+                                <include reference="CNe-Oe-6b5"/>
+                                <include reference="kdv-7i-ykD"/>
+                                <include reference="qPi-09-m0C"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shopping List" image="Shopping Cart" id="mDL-yd-zQy"/>
+                    <connections>
+                        <outlet property="fromDate" destination="gd8-fU-XgJ" id="2X5-AR-1TY"/>
+                        <outlet property="lblHeading" destination="q0k-t3-XD9" id="1nf-yF-n2D"/>
+                        <outlet property="purchListSegmtCtrl" destination="1aS-XE-vRh" id="I56-9P-QDk"/>
+                        <outlet property="purchasedListView" destination="2DG-ST-cVk" id="EYg-fn-aCZ"/>
+                        <outlet property="recipeListView" destination="kdv-7i-ykD" id="vKs-RP-DT6"/>
+                        <outlet property="saveListImage" destination="YEF-QP-SSU" id="4B7-Dx-QTd"/>
+                        <outlet property="shopListView" destination="pwY-1O-ReR" id="ERH-BI-eGf"/>
+                        <outlet property="toDate" destination="VL3-dN-pfa" id="obD-Y6-29u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HJ5-8i-Bwb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-793.5" y="459"/>
+        </scene>
+        <!--Meal Calendar-->
+        <scene sceneID="XuM-Pl-jVm">
+            <objects>
+                <navigationController id="QCu-xE-uCu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Meal Calendar" image="Schedule" id="Zy9-0X-hMp"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fIG-fT-8Jt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LGU-z2-mlT" kind="relationship" relationship="rootViewController" id="6Oo-oO-7LP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSV-O3-T7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="468"/>
+        </scene>
+        <!--Recipie Book-->
+        <scene sceneID="57b-fM-zrF">
+            <objects>
+                <viewController restorationIdentifier="Recipie Book" storyboardIdentifier="Recipie Book" title="Recipie Book" id="OXt-rU-Yx3" customClass="RecipeBookController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Hp-Wg-dix"/>
+                        <viewControllerLayoutGuide type="bottom" id="jTy-W3-7xa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ziX-bx-jl3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search your dish" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="z6w-wT-BuS">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="69" width="307" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="searchRecipeTextChange:" destination="OXt-rU-Yx3" eventType="editingChanged" id="wPO-Ux-TRe"/>
+                                    <outlet property="delegate" destination="OXt-rU-Yx3" id="Pez-ib-VPc"/>
+                                </connections>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gbj-jF-Nxw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="39" id="Sf9-xy-ABD" customClass="RecipeCellTableViewCell" customModule="RecipeMadness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sf9-xy-ABD" id="kiZ-eM-tKe">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="38.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eq2-GB-e30">
+                                                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="5" y="2" width="51" height="35"/>
+                                                    </variation>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyp-4s-BtZ">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="7"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="65" y="18" width="198" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJB-4X-ltt">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="65" y="3" width="190" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="Eq2-GB-e30"/>
+                                                    <exclude reference="Wyp-4s-BtZ"/>
+                                                    <exclude reference="rJB-4X-ltt"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="Eq2-GB-e30"/>
+                                                    <include reference="Wyp-4s-BtZ"/>
+                                                    <include reference="rJB-4X-ltt"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Image" destination="Eq2-GB-e30" id="nMg-zD-PNt"/>
+                                            <outlet property="Procedure" destination="Wyp-4s-BtZ" id="Zil-qx-mRB"/>
+                                            <outlet property="RecipeName" destination="rJB-4X-ltt" id="yvu-MR-gwX"/>
+                                            <segue destination="Qdy-OY-RZe" kind="push" identifier="EditRecipe" id="yBX-ui-smW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="105" width="307" height="438"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="OXt-rU-Yx3" id="OKO-r2-Rar"/>
+                                    <outlet property="delegate" destination="OXt-rU-Yx3" id="BK2-8V-3G0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0079756802536005717" green="0.012653965357072069" blue="0.034000318877551061" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="z6w-wT-BuS"/>
+                                <exclude reference="gbj-jF-Nxw"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="z6w-wT-BuS"/>
+                                <include reference="gbj-jF-Nxw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Recipe Book" id="HL9-xE-tpK">
+                        <barButtonItem key="backBarButtonItem" title="Recipes" id="yaM-An-9en"/>
+                        <barButtonItem key="rightBarButtonItem" title="+" id="pAh-YS-Rd2">
+                            <connections>
+                                <segue destination="z6m-d7-PrV" kind="push" id="ygK-TV-wa1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchRecipeText" destination="z6w-wT-BuS" id="2Bs-oI-inS"/>
+                        <outlet property="tableView" destination="gbj-jF-Nxw" id="BLf-9W-esk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kzQ-u6-Qzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1317" y="-255"/>
+        </scene>
+        <!--Add new recipie-->
+        <scene sceneID="XdG-nH-Esh">
+            <objects>
+                <viewController id="z6m-d7-PrV" customClass="IngredientController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sM9-RX-sYr"/>
+                        <viewControllerLayoutGuide type="bottom" id="2bx-K0-e90"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="awj-iX-858">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-U3-Lma">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="67" width="79" height="63"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Ingredients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZp-0x-phB">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="133" width="299" height="21"/>
+                                </variation>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="23" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="24c-KT-ffS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="23" id="WrF-pW-cLp" customClass="IngedientViewCell" customModule="RecipeMadness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WrF-pW-cLp" id="bXB-4r-LSo">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="22.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLe-3w-glK">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="37" y="2" width="146" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Units" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwG-H6-NQN">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="241" y="2" width="40" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AC-5i-bxb">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="167" y="2" width="64" height="21"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CbQ-km-sxe">
+                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="widthClass=compact" fixedFrame="YES">
+                                                        <rect key="frame" x="8" y="2" width="21" height="21"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="BLe-3w-glK"/>
+                                                    <exclude reference="zwG-H6-NQN"/>
+                                                    <exclude reference="8AC-5i-bxb"/>
+                                                    <exclude reference="CbQ-km-sxe"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="subviews">
+                                                    <include reference="BLe-3w-glK"/>
+                                                    <include reference="zwG-H6-NQN"/>
+                                                    <include reference="8AC-5i-bxb"/>
+                                                    <include reference="CbQ-km-sxe"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="Name" destination="BLe-3w-glK" id="Az0-hn-esT"/>
+                                            <outlet property="Qty" destination="8AC-5i-bxb" id="Dda-ih-UmT"/>
+                                            <outlet property="SNO" destination="CbQ-km-sxe" id="0iy-sr-vo0"/>
+                                            <outlet property="Units" destination="zwG-H6-NQN" id="A5k-Ib-zRi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="248" width="299" height="268"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="z6m-d7-PrV" id="gMD-fE-U8W"/>
+                                    <outlet property="delegate" destination="z6m-d7-PrV" id="9Bx-IV-vRF"/>
+                                </connections>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter recipe name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="52y-Ll-xoB">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="93" y="67" width="211" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="recipeNameChanged:" destination="z6m-d7-PrV" eventType="editingChanged" id="99b-pZ-SSc"/>
+                                    <outlet property="delegate" destination="z6m-d7-PrV" id="ASX-Lm-Mpw"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qO-Hh-L5k">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Edit procedure">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="197" y="110" width="107" height="25"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="IgS-MW-DGC" kind="push" identifier="EditPreparation" id="Iep-bF-gox"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6t-zr-Lf7">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="115" width="80" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="changePic:" destination="z6m-d7-PrV" eventType="touchUpInside" id="hft-zQ-D65"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Serves" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ijL-n5-3Iy">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="100" width="97" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="checkServesValue:" destination="z6m-d7-PrV" eventType="editingChanged" id="sYD-6Z-piX"/>
+                                    <outlet property="delegate" destination="z6m-d7-PrV" id="c6D-cY-QVf"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPW-K7-njD">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.54775191329999995" green="0.26470231640000003" blue="0.081812088130000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="6" y="224" width="298" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredient name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boy-eE-AjT">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="43" y="222" width="146" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Units" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCs-Wr-Adj">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="248" y="222" width="40" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cle-Ra-wfS">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="174" y="222" width="64" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sno" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8w1-6J-Dts">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="11" y="222" width="26" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ingredient Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ZNA-PV-Bbz">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="157" width="217" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ingredientNameChanged:" destination="z6m-d7-PrV" eventType="editingChanged" id="OFM-b4-bG1"/>
+                                    <outlet property="delegate" destination="z6m-d7-PrV" id="3BF-vz-otg"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Units" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="N5D-GW-W1h">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="117" y="190" width="68" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="unitsChanged:" destination="z6m-d7-PrV" eventType="editingChanged" id="Y8i-kQ-FSe"/>
+                                    <outlet property="delegate" destination="z6m-d7-PrV" id="yHi-2W-y40"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Qty" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sQ8-1W-Lge">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="22" y="190" width="82" height="30"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="z6m-d7-PrV" id="lKc-SI-Wia"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ri-09-pZc">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="197" y="195" width="52" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="AddIngredient:" destination="z6m-d7-PrV" eventType="touchUpInside" id="4H7-xP-no5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="q8f-U3-Lma"/>
+                                <exclude reference="eZp-0x-phB"/>
+                                <exclude reference="24c-KT-ffS"/>
+                                <exclude reference="52y-Ll-xoB"/>
+                                <exclude reference="1qO-Hh-L5k"/>
+                                <exclude reference="q6t-zr-Lf7"/>
+                                <exclude reference="ijL-n5-3Iy"/>
+                                <exclude reference="wPW-K7-njD"/>
+                                <exclude reference="boy-eE-AjT"/>
+                                <exclude reference="TCs-Wr-Adj"/>
+                                <exclude reference="Cle-Ra-wfS"/>
+                                <exclude reference="8w1-6J-Dts"/>
+                                <exclude reference="ZNA-PV-Bbz"/>
+                                <exclude reference="N5D-GW-W1h"/>
+                                <exclude reference="sQ8-1W-Lge"/>
+                                <exclude reference="2ri-09-pZc"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="q8f-U3-Lma"/>
+                                <include reference="eZp-0x-phB"/>
+                                <include reference="24c-KT-ffS"/>
+                                <include reference="52y-Ll-xoB"/>
+                                <include reference="1qO-Hh-L5k"/>
+                                <include reference="q6t-zr-Lf7"/>
+                                <include reference="ijL-n5-3Iy"/>
+                                <include reference="wPW-K7-njD"/>
+                                <include reference="boy-eE-AjT"/>
+                                <include reference="TCs-Wr-Adj"/>
+                                <include reference="Cle-Ra-wfS"/>
+                                <include reference="8w1-6J-Dts"/>
+                                <include reference="ZNA-PV-Bbz"/>
+                                <include reference="N5D-GW-W1h"/>
+                                <include reference="sQ8-1W-Lge"/>
+                                <include reference="2ri-09-pZc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add new recipie" id="vNz-A2-08M">
+                        <barButtonItem key="backBarButtonItem" title="Recipe" id="aK7-vs-vWw"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="piI-hy-eTU">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hx1-YL-9VM">
+                                <rect key="frame" x="534" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveRecipe:" destination="z6m-d7-PrV" eventType="touchUpInside" id="3bK-Rf-Ig0"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnAddIngredient" destination="2ri-09-pZc" id="vLf-V9-nM7"/>
+                        <outlet property="btnAddPic" destination="q6t-zr-Lf7" id="xD6-UG-FA3"/>
+                        <outlet property="btnEditProcedure" destination="1qO-Hh-L5k" id="Cuq-ow-gdm"/>
+                        <outlet property="lblIngredientListBar" destination="wPW-K7-njD" id="YWu-7j-19c"/>
+                        <outlet property="lblIngredientsBar" destination="eZp-0x-phB" id="KKP-Id-mBS"/>
+                        <outlet property="recipeImage" destination="q8f-U3-Lma" id="b53-QJ-N9M"/>
+                        <outlet property="tableViewIngredientsToSave" destination="24c-KT-ffS" id="Mya-8V-am9"/>
+                        <outlet property="txtName" destination="ZNA-PV-Bbz" id="FIf-aE-zoL"/>
+                        <outlet property="txtQty" destination="sQ8-1W-Lge" id="2yQ-if-1LK"/>
+                        <outlet property="txtRecipe" destination="52y-Ll-xoB" id="Gau-bT-t9h"/>
+                        <outlet property="txtServes" destination="ijL-n5-3Iy" id="7oX-wq-na1"/>
+                        <outlet property="txtUnits" destination="N5D-GW-W1h" id="STO-TH-f8o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFl-Y3-o5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017.5" y="-255"/>
+        </scene>
+        <!--Preparation-->
+        <scene sceneID="0aa-UA-569">
+            <objects>
+                <viewController id="IgS-MW-DGC" customClass="AddRecipeIngredientController" customModule="RecipeMadness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QrD-fF-99U"/>
+                        <viewControllerLayoutGuide type="bottom" id="xig-ie-FFC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vu2-DW-bbd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KrN-bN-nPG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.9903738839285714" green="0.86515668402977797" blue="0.92824304170007887" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.24282525510204078" green="0.17930592930628972" blue="0.02602523407237357" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="7" y="72" width="308" height="423"/>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KrN-bN-nPG"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="KrN-bN-nPG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Preparation" id="95z-aD-Up7">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="nv9-Ap-ZzG">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uam-KT-7jz">
+                                <rect key="frame" x="534" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveProcedure:" destination="IgS-MW-DGC" eventType="touchUpInside" id="RZh-Zw-JQx"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="txtProcedure" destination="KrN-bN-nPG" id="F2W-Ny-eny"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1L2-10-ftG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="77"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Book" width="20" height="20"/>
+        <image name="Home" width="20" height="20"/>
+        <image name="Save1" width="66" height="66"/>
+        <image name="Schedule" width="20" height="20"/>
+        <image name="Shopping Cart" width="30" height="30"/>
+        <image name="get" width="128" height="128"/>
+        <image name="homeScreen.jpg" width="1706" height="3030"/>
+        <image name="img1" width="259" height="195"/>
+        <image name="img2" width="259" height="195"/>
+        <image name="launchScreen.jpg" width="1706" height="3030"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="O8a-mT-s6x"/>
+        <segue reference="nDv-VM-yMt"/>
+    </inferredMetricsTieBreakers>
+</document>

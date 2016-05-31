@@ -1,0 +1,197 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RecipeIngredient"
+provides-nominal:
+- "C13RecipeMadness16RecipeIngredient"
+provides-member:
+- ["C13RecipeMadness16RecipeIngredient", ""]
+provides-dynamic-lookup:
+- "recipe"
+- "ingredient"
+- "name"
+- "units"
+- "quantity"
+- "qty"
+depends-top-level:
+- "NSManagedObject"
+- "Ingredient"
+- "RecipeIngredient"
+- "String"
+- "NSNumber"
+- "Recipe"
+- "Double"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "Double"]
+- !private ["Ps9AnyObject", "NSNumber"]
+- ["Ps9AnyObject", "ingredient"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "qty"]
+- ["Ps9AnyObject", "quantity"]
+- ["Ps9AnyObject", "recipe"]
+- ["Ps9AnyObject", "units"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps25BooleanLiteralConvertible", "init"]
+- !private ["Ps11CVarArgType", "Double"]
+- !private ["Ps11CVarArgType", "NSNumber"]
+- ["Ps11CVarArgType", "ingredient"]
+- ["Ps11CVarArgType", "init"]
+- ["Ps11CVarArgType", "name"]
+- ["Ps11CVarArgType", "qty"]
+- ["Ps11CVarArgType", "quantity"]
+- ["Ps11CVarArgType", "recipe"]
+- ["Ps11CVarArgType", "units"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Double"]
+- !private ["Ps28CustomDebugStringConvertible", "NSNumber"]
+- ["Ps28CustomDebugStringConvertible", "ingredient"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "qty"]
+- ["Ps28CustomDebugStringConvertible", "quantity"]
+- ["Ps28CustomDebugStringConvertible", "recipe"]
+- ["Ps28CustomDebugStringConvertible", "units"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "Double"]
+- !private ["Ps23CustomStringConvertible", "NSNumber"]
+- ["Ps23CustomStringConvertible", "ingredient"]
+- ["Ps23CustomStringConvertible", "init"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "qty"]
+- ["Ps23CustomStringConvertible", "quantity"]
+- ["Ps23CustomStringConvertible", "recipe"]
+- ["Ps23CustomStringConvertible", "units"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "init"]
+- !private ["Ps9Equatable", "Double"]
+- !private ["Ps9Equatable", "NSNumber"]
+- ["Ps9Equatable", "ingredient"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "qty"]
+- ["Ps9Equatable", "quantity"]
+- ["Ps9Equatable", "recipe"]
+- ["Ps9Equatable", "units"]
+- ["Ps9Equatable", ""]
+- !private ["Ps23FloatLiteralConvertible", "init"]
+- !private ["Ps17FloatingPointType", "init"]
+- !private ["Ps8Hashable", "Double"]
+- !private ["Ps8Hashable", "NSNumber"]
+- ["Ps8Hashable", "ingredient"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "qty"]
+- ["Ps8Hashable", "quantity"]
+- ["Ps8Hashable", "recipe"]
+- ["Ps8Hashable", "units"]
+- ["Ps8Hashable", ""]
+- !private ["C13RecipeMadness10Ingredient", "name"]
+- !private ["C13RecipeMadness10Ingredient", "units"]
+- !private ["Ps25IntegerLiteralConvertible", "init"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo9NSCopying", "init"]
+- ["CSo15NSManagedObject", "Double"]
+- ["CSo15NSManagedObject", "Ingredient"]
+- ["CSo15NSManagedObject", "NSNumber"]
+- ["CSo15NSManagedObject", "Recipe"]
+- ["CSo15NSManagedObject", "String"]
+- ["CSo15NSManagedObject", "ingredient"]
+- ["CSo15NSManagedObject", "init"]
+- ["CSo15NSManagedObject", "name"]
+- ["CSo15NSManagedObject", "qty"]
+- ["CSo15NSManagedObject", "quantity"]
+- ["CSo15NSManagedObject", "recipe"]
+- ["CSo15NSManagedObject", "units"]
+- ["CSo15NSManagedObject", ""]
+- !private ["CSo8NSNumber", "init"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "Ingredient"]
+- ["CSo8NSObject", "NSNumber"]
+- ["CSo8NSObject", "Recipe"]
+- ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "ingredient"]
+- ["CSo8NSObject", "init"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "qty"]
+- ["CSo8NSObject", "quantity"]
+- ["CSo8NSObject", "recipe"]
+- ["CSo8NSObject", "units"]
+- !private ["PSo16NSObjectProtocol", "Double"]
+- !private ["PSo16NSObjectProtocol", "NSNumber"]
+- ["PSo16NSObjectProtocol", "ingredient"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "qty"]
+- ["PSo16NSObjectProtocol", "quantity"]
+- ["PSo16NSObjectProtocol", "recipe"]
+- ["PSo16NSObjectProtocol", "units"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo7NSValue", "init"]
+- ["C13RecipeMadness16RecipeIngredient", "Double"]
+- ["C13RecipeMadness16RecipeIngredient", "Ingredient"]
+- ["C13RecipeMadness16RecipeIngredient", "NSNumber"]
+- ["C13RecipeMadness16RecipeIngredient", "Recipe"]
+- ["C13RecipeMadness16RecipeIngredient", "String"]
+- ["C13RecipeMadness16RecipeIngredient", "deinit"]
+- ["C13RecipeMadness16RecipeIngredient", "ingredient"]
+- ["C13RecipeMadness16RecipeIngredient", "init"]
+- ["C13RecipeMadness16RecipeIngredient", "name"]
+- !private ["C13RecipeMadness16RecipeIngredient", "qty"]
+- ["C13RecipeMadness16RecipeIngredient", "quantity"]
+- ["C13RecipeMadness16RecipeIngredient", "recipe"]
+- ["C13RecipeMadness16RecipeIngredient", "units"]
+- !private ["Ps16SignedNumberType", "init"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Ps31_BuiltinFloatLiteralConvertible", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "init"]
+- !private ["Ps19_CVarArgAlignedType", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps12_Reflectable", "init"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Ps25BooleanLiteralConvertible"
+- "Ps11CVarArgType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- !private "Ps23FloatLiteralConvertible"
+- !private "Ps17FloatingPointType"
+- "Ps8Hashable"
+- !private "C13RecipeMadness10Ingredient"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- "CSo15NSManagedObject"
+- !private "CSo8NSNumber"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo7NSValue"
+- "C13RecipeMadness16RecipeIngredient"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "Ps31_BuiltinFloatLiteralConvertible"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps19_CVarArgAlignedType"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "a15d8c9e9da147dde6336aa9758aa3a7"

@@ -1,0 +1,561 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Recipe"
+provides-nominal:
+- "C13RecipeMadness6Recipe"
+provides-member:
+- ["C13RecipeMadness6Recipe", ""]
+provides-dynamic-lookup:
+- "getIngredients"
+- "addIngredient"
+- "procedure"
+- "save"
+- "numServes"
+- "name"
+- "image"
+depends-top-level:
+- "Bool"
+- "Ingredient"
+- "RecipeIngredient"
+- "Double"
+- !private "StringLiteralType"
+- !private "NSSortDescriptor"
+- "NSManagedObject"
+- !private "NSFetchRequest"
+- !private "AppDelegate"
+- !private "DBmanager"
+- "AnyObject"
+- "NSNumber"
+- !private "UIApplication"
+- !private "NSPredicate"
+- !private "Array"
+- "Recipe"
+- !private "BooleanLiteralType"
+- !private "NSEntityDescription"
+- "String"
+depends-member:
+- !private ["Ps9AnyObject", "DBmanager"]
+- !private ["Ps9AnyObject", "NSEntityDescription"]
+- !private ["Ps9AnyObject", "NSFetchRequest"]
+- !private ["Ps9AnyObject", "NSPredicate"]
+- !private ["Ps9AnyObject", "NSSortDescriptor"]
+- !private ["Ps9AnyObject", "RecipeIngredient"]
+- !private ["Ps9AnyObject", "UIApplication"]
+- ["Ps9AnyObject", "addIngredient"]
+- !private ["Ps9AnyObject", "delegate"]
+- !private ["Ps9AnyObject", "executeFetchRequest"]
+- ["Ps9AnyObject", "getIngredients"]
+- ["Ps9AnyObject", "image"]
+- !private ["Ps9AnyObject", "ingredient"]
+- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "insertNewObjectForEntityForName"]
+- !private ["Ps9AnyObject", "managedObjectContext"]
+- ["Ps9AnyObject", "name"]
+- ["Ps9AnyObject", "numServes"]
+- !private ["Ps9AnyObject", "predicate"]
+- ["Ps9AnyObject", "procedure"]
+- !private ["Ps9AnyObject", "quantity"]
+- !private ["Ps9AnyObject", "recipe"]
+- ["Ps9AnyObject", "save"]
+- !private ["Ps9AnyObject", "sharedApplication"]
+- !private ["Ps9AnyObject", "sortDescriptors"]
+- ["Ps9AnyObject", ""]
+- !private ["C13RecipeMadness11AppDelegate", "managedObjectContext"]
+- !private ["Sa", "Element"]
+- !private ["Sa", "Generator"]
+- !private ["Sa", "Index"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "deinit"]
+- !private ["Sa", "init"]
+- !private ["Ps23ArrayLiteralConvertible", "Element"]
+- !private ["Ps23ArrayLiteralConvertible", "Generator"]
+- !private ["Ps23ArrayLiteralConvertible", "Index"]
+- !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
+- !private ["Ps23ArrayLiteralConvertible", "_Element"]
+- !private ["Ps23ArrayLiteralConvertible", "init"]
+- !private ["Vs10ArraySlice", "Generator"]
+- !private ["Vs10ArraySlice", "Index"]
+- !private ["Ps22BidirectionalIndexType", "Distance"]
+- !private ["Ps22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["Ps21BitwiseOperationsType", "Distance"]
+- !private ["Ps21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "DBmanager"]
+- !private ["Ps11CVarArgType", "Distance"]
+- !private ["Ps11CVarArgType", "IntegerLiteralType"]
+- !private ["Ps11CVarArgType", "NSEntityDescription"]
+- !private ["Ps11CVarArgType", "NSFetchRequest"]
+- !private ["Ps11CVarArgType", "NSPredicate"]
+- !private ["Ps11CVarArgType", "NSSortDescriptor"]
+- !private ["Ps11CVarArgType", "RecipeIngredient"]
+- !private ["Ps11CVarArgType", "UIApplication"]
+- ["Ps11CVarArgType", "addIngredient"]
+- !private ["Ps11CVarArgType", "delegate"]
+- !private ["Ps11CVarArgType", "executeFetchRequest"]
+- ["Ps11CVarArgType", "getIngredients"]
+- ["Ps11CVarArgType", "image"]
+- !private ["Ps11CVarArgType", "ingredient"]
+- ["Ps11CVarArgType", "init"]
+- !private ["Ps11CVarArgType", "insertNewObjectForEntityForName"]
+- !private ["Ps11CVarArgType", "managedObjectContext"]
+- ["Ps11CVarArgType", "name"]
+- ["Ps11CVarArgType", "numServes"]
+- !private ["Ps11CVarArgType", "predicate"]
+- ["Ps11CVarArgType", "procedure"]
+- !private ["Ps11CVarArgType", "quantity"]
+- !private ["Ps11CVarArgType", "recipe"]
+- ["Ps11CVarArgType", "save"]
+- !private ["Ps11CVarArgType", "sharedApplication"]
+- !private ["Ps11CVarArgType", "sortDescriptors"]
+- ["Ps11CVarArgType", ""]
+- !private ["Ps14CollectionType", "Element"]
+- !private ["Ps14CollectionType", "Generator"]
+- !private ["Ps14CollectionType", "Index"]
+- !private ["Ps14CollectionType", "SubSequence"]
+- !private ["Ps14CollectionType", "_Element"]
+- !private ["Ps14CollectionType", "init"]
+- !private ["Ps10Comparable", "Distance"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps28CustomDebugStringConvertible", "DBmanager"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "Generator"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "NSEntityDescription"]
+- !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
+- !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
+- !private ["Ps28CustomDebugStringConvertible", "NSSortDescriptor"]
+- !private ["Ps28CustomDebugStringConvertible", "RecipeIngredient"]
+- ["Ps28CustomDebugStringConvertible", "Some"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "UIApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- ["Ps28CustomDebugStringConvertible", "addIngredient"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
+- !private ["Ps28CustomDebugStringConvertible", "executeFetchRequest"]
+- ["Ps28CustomDebugStringConvertible", "getIngredients"]
+- ["Ps28CustomDebugStringConvertible", "image"]
+- !private ["Ps28CustomDebugStringConvertible", "ingredient"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "insertNewObjectForEntityForName"]
+- !private ["Ps28CustomDebugStringConvertible", "managedObjectContext"]
+- ["Ps28CustomDebugStringConvertible", "name"]
+- ["Ps28CustomDebugStringConvertible", "numServes"]
+- !private ["Ps28CustomDebugStringConvertible", "predicate"]
+- ["Ps28CustomDebugStringConvertible", "procedure"]
+- !private ["Ps28CustomDebugStringConvertible", "quantity"]
+- !private ["Ps28CustomDebugStringConvertible", "recipe"]
+- ["Ps28CustomDebugStringConvertible", "save"]
+- !private ["Ps28CustomDebugStringConvertible", "sharedApplication"]
+- !private ["Ps28CustomDebugStringConvertible", "sortDescriptors"]
+- ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps23CustomStringConvertible", "DBmanager"]
+- !private ["Ps23CustomStringConvertible", "Distance"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "Generator"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "NSEntityDescription"]
+- !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
+- !private ["Ps23CustomStringConvertible", "NSPredicate"]
+- !private ["Ps23CustomStringConvertible", "NSSortDescriptor"]
+- !private ["Ps23CustomStringConvertible", "RecipeIngredient"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UIApplication"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- ["Ps23CustomStringConvertible", "addIngredient"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
+- !private ["Ps23CustomStringConvertible", "executeFetchRequest"]
+- ["Ps23CustomStringConvertible", "getIngredients"]
+- ["Ps23CustomStringConvertible", "image"]
+- !private ["Ps23CustomStringConvertible", "ingredient"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "insertNewObjectForEntityForName"]
+- !private ["Ps23CustomStringConvertible", "managedObjectContext"]
+- ["Ps23CustomStringConvertible", "name"]
+- ["Ps23CustomStringConvertible", "numServes"]
+- !private ["Ps23CustomStringConvertible", "predicate"]
+- ["Ps23CustomStringConvertible", "procedure"]
+- !private ["Ps23CustomStringConvertible", "quantity"]
+- !private ["Ps23CustomStringConvertible", "recipe"]
+- ["Ps23CustomStringConvertible", "save"]
+- !private ["Ps23CustomStringConvertible", "sharedApplication"]
+- !private ["Ps23CustomStringConvertible", "sortDescriptors"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["C13RecipeMadness9DBmanager", "save"]
+- !private ["Ps9Equatable", "DBmanager"]
+- !private ["Ps9Equatable", "Distance"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "NSEntityDescription"]
+- !private ["Ps9Equatable", "NSFetchRequest"]
+- !private ["Ps9Equatable", "NSPredicate"]
+- !private ["Ps9Equatable", "NSSortDescriptor"]
+- !private ["Ps9Equatable", "RecipeIngredient"]
+- !private ["Ps9Equatable", "UIApplication"]
+- ["Ps9Equatable", "addIngredient"]
+- !private ["Ps9Equatable", "delegate"]
+- !private ["Ps9Equatable", "executeFetchRequest"]
+- ["Ps9Equatable", "getIngredients"]
+- ["Ps9Equatable", "image"]
+- !private ["Ps9Equatable", "ingredient"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "insertNewObjectForEntityForName"]
+- !private ["Ps9Equatable", "managedObjectContext"]
+- ["Ps9Equatable", "name"]
+- ["Ps9Equatable", "numServes"]
+- !private ["Ps9Equatable", "predicate"]
+- ["Ps9Equatable", "procedure"]
+- !private ["Ps9Equatable", "quantity"]
+- !private ["Ps9Equatable", "recipe"]
+- ["Ps9Equatable", "save"]
+- !private ["Ps9Equatable", "sharedApplication"]
+- !private ["Ps9Equatable", "sortDescriptors"]
+- ["Ps9Equatable", ""]
+- !private ["Ps16ForwardIndexType", "Distance"]
+- !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
+- !private ["Ps13GeneratorType", "Element"]
+- !private ["Ps8Hashable", "DBmanager"]
+- !private ["Ps8Hashable", "Distance"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "NSEntityDescription"]
+- !private ["Ps8Hashable", "NSFetchRequest"]
+- !private ["Ps8Hashable", "NSPredicate"]
+- !private ["Ps8Hashable", "NSSortDescriptor"]
+- !private ["Ps8Hashable", "RecipeIngredient"]
+- !private ["Ps8Hashable", "UIApplication"]
+- ["Ps8Hashable", "addIngredient"]
+- !private ["Ps8Hashable", "delegate"]
+- !private ["Ps8Hashable", "executeFetchRequest"]
+- ["Ps8Hashable", "getIngredients"]
+- ["Ps8Hashable", "image"]
+- !private ["Ps8Hashable", "ingredient"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "insertNewObjectForEntityForName"]
+- !private ["Ps8Hashable", "managedObjectContext"]
+- ["Ps8Hashable", "name"]
+- ["Ps8Hashable", "numServes"]
+- !private ["Ps8Hashable", "predicate"]
+- ["Ps8Hashable", "procedure"]
+- !private ["Ps8Hashable", "quantity"]
+- !private ["Ps8Hashable", "recipe"]
+- ["Ps8Hashable", "save"]
+- !private ["Ps8Hashable", "sharedApplication"]
+- !private ["Ps8Hashable", "sortDescriptors"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Generator"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Vs17IndexingGenerator", "Element"]
+- !private ["Si", "Distance"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Ps21IntegerArithmeticType", "Distance"]
+- !private ["Ps21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps25IntegerLiteralConvertible", "Distance"]
+- !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps11IntegerType", "Distance"]
+- !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["Ps14MirrorPathType", "Distance"]
+- !private ["Ps14MirrorPathType", "IntegerLiteralType"]
+- !private ["Ps21MutableCollectionType", "Element"]
+- !private ["Ps21MutableCollectionType", "Generator"]
+- !private ["Ps21MutableCollectionType", "Index"]
+- !private ["Ps21MutableCollectionType", "SubSequence"]
+- !private ["Ps21MutableCollectionType", "_Element"]
+- !private ["Ps21MutableCollectionType", "init"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "Generator"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableSliceable", "Element"]
+- !private ["Ps16MutableSliceable", "Generator"]
+- !private ["Ps16MutableSliceable", "Index"]
+- !private ["Ps16MutableSliceable", "SubSequence"]
+- !private ["Ps16MutableSliceable", "_Element"]
+- !private ["Ps16MutableSliceable", "init"]
+- !private ["PSo8NSCoding", "executeFetchRequest"]
+- !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "insertNewObjectForEntityForName"]
+- !private ["PSo8NSCoding", "predicate"]
+- !private ["PSo8NSCoding", "sortDescriptors"]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "insertNewObjectForEntityForName"]
+- !private ["PSo9NSCopying", "predicate"]
+- !private ["PSo9NSCopying", "sortDescriptors"]
+- !private ["CSo19NSEntityDescription", "insertNewObjectForEntityForName"]
+- !private ["PSo17NSFastEnumeration", "insertNewObjectForEntityForName"]
+- !private ["CSo14NSFetchRequest", "init"]
+- !private ["CSo14NSFetchRequest", "predicate"]
+- !private ["CSo14NSFetchRequest", "sortDescriptors"]
+- !private ["PSo9NSLocking", "executeFetchRequest"]
+- ["CSo15NSManagedObject", "AnyObject"]
+- !private ["CSo15NSManagedObject", "AppDelegate"]
+- ["CSo15NSManagedObject", "Bool"]
+- !private ["CSo15NSManagedObject", "DBmanager"]
+- ["CSo15NSManagedObject", "Double"]
+- ["CSo15NSManagedObject", "Ingredient"]
+- !private ["CSo15NSManagedObject", "NSEntityDescription"]
+- !private ["CSo15NSManagedObject", "NSFetchRequest"]
+- ["CSo15NSManagedObject", "NSNumber"]
+- !private ["CSo15NSManagedObject", "NSPredicate"]
+- !private ["CSo15NSManagedObject", "NSSortDescriptor"]
+- ["CSo15NSManagedObject", "RecipeIngredient"]
+- ["CSo15NSManagedObject", "String"]
+- !private ["CSo15NSManagedObject", "UIApplication"]
+- ["CSo15NSManagedObject", "addIngredient"]
+- !private ["CSo15NSManagedObject", "deinit"]
+- ["CSo15NSManagedObject", "getIngredients"]
+- ["CSo15NSManagedObject", "image"]
+- !private ["CSo15NSManagedObject", "ingredient"]
+- ["CSo15NSManagedObject", "init"]
+- ["CSo15NSManagedObject", "name"]
+- ["CSo15NSManagedObject", "numServes"]
+- ["CSo15NSManagedObject", "procedure"]
+- !private ["CSo15NSManagedObject", "quantity"]
+- !private ["CSo15NSManagedObject", "recipe"]
+- ["CSo15NSManagedObject", "save"]
+- ["CSo15NSManagedObject", ""]
+- !private ["CSo22NSManagedObjectContext", "executeFetchRequest"]
+- ["CSo8NSObject", "AnyObject"]
+- !private ["CSo8NSObject", "AppDelegate"]
+- ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "DBmanager"]
+- ["CSo8NSObject", "Double"]
+- ["CSo8NSObject", "Ingredient"]
+- !private ["CSo8NSObject", "NSEntityDescription"]
+- !private ["CSo8NSObject", "NSFetchRequest"]
+- ["CSo8NSObject", "NSNumber"]
+- !private ["CSo8NSObject", "NSPredicate"]
+- !private ["CSo8NSObject", "NSSortDescriptor"]
+- ["CSo8NSObject", "RecipeIngredient"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "UIApplication"]
+- ["CSo8NSObject", "addIngredient"]
+- !private ["CSo8NSObject", "delegate"]
+- !private ["CSo8NSObject", "executeFetchRequest"]
+- ["CSo8NSObject", "getIngredients"]
+- ["CSo8NSObject", "image"]
+- !private ["CSo8NSObject", "ingredient"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "insertNewObjectForEntityForName"]
+- !private ["CSo8NSObject", "managedObjectContext"]
+- ["CSo8NSObject", "name"]
+- ["CSo8NSObject", "numServes"]
+- !private ["CSo8NSObject", "predicate"]
+- ["CSo8NSObject", "procedure"]
+- !private ["CSo8NSObject", "quantity"]
+- !private ["CSo8NSObject", "recipe"]
+- ["CSo8NSObject", "save"]
+- !private ["CSo8NSObject", "sharedApplication"]
+- !private ["CSo8NSObject", "sortDescriptors"]
+- !private ["PSo16NSObjectProtocol", "DBmanager"]
+- !private ["PSo16NSObjectProtocol", "NSEntityDescription"]
+- !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
+- !private ["PSo16NSObjectProtocol", "NSPredicate"]
+- !private ["PSo16NSObjectProtocol", "NSSortDescriptor"]
+- !private ["PSo16NSObjectProtocol", "RecipeIngredient"]
+- !private ["PSo16NSObjectProtocol", "UIApplication"]
+- ["PSo16NSObjectProtocol", "addIngredient"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
+- !private ["PSo16NSObjectProtocol", "executeFetchRequest"]
+- ["PSo16NSObjectProtocol", "getIngredients"]
+- ["PSo16NSObjectProtocol", "image"]
+- !private ["PSo16NSObjectProtocol", "ingredient"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "insertNewObjectForEntityForName"]
+- !private ["PSo16NSObjectProtocol", "managedObjectContext"]
+- ["PSo16NSObjectProtocol", "name"]
+- ["PSo16NSObjectProtocol", "numServes"]
+- !private ["PSo16NSObjectProtocol", "predicate"]
+- ["PSo16NSObjectProtocol", "procedure"]
+- !private ["PSo16NSObjectProtocol", "quantity"]
+- !private ["PSo16NSObjectProtocol", "recipe"]
+- ["PSo16NSObjectProtocol", "save"]
+- !private ["PSo16NSObjectProtocol", "sharedApplication"]
+- !private ["PSo16NSObjectProtocol", "sortDescriptors"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["CSo24NSPersistentStoreRequest", "init"]
+- !private ["CSo24NSPersistentStoreRequest", "predicate"]
+- !private ["CSo24NSPersistentStoreRequest", "sortDescriptors"]
+- !private ["CSo11NSPredicate", "init"]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo16NSSortDescriptor", "init"]
+- ["Ps21NilLiteralConvertible", "Some"]
+- ["Sq", "Some"]
+- !private ["Sq", "deinit"]
+- !private ["Ps21RandomAccessIndexType", "Distance"]
+- !private ["Ps21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["Ps30RangeReplaceableCollectionType", "Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "Generator"]
+- !private ["Ps30RangeReplaceableCollectionType", "Index"]
+- !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["Ps30RangeReplaceableCollectionType", "_Element"]
+- !private ["Ps30RangeReplaceableCollectionType", "init"]
+- ["C13RecipeMadness6Recipe", "AnyObject"]
+- !private ["C13RecipeMadness6Recipe", "AppDelegate"]
+- ["C13RecipeMadness6Recipe", "Bool"]
+- !private ["C13RecipeMadness6Recipe", "DBmanager"]
+- ["C13RecipeMadness6Recipe", "Double"]
+- ["C13RecipeMadness6Recipe", "Ingredient"]
+- !private ["C13RecipeMadness6Recipe", "NSEntityDescription"]
+- !private ["C13RecipeMadness6Recipe", "NSFetchRequest"]
+- ["C13RecipeMadness6Recipe", "NSNumber"]
+- !private ["C13RecipeMadness6Recipe", "NSPredicate"]
+- !private ["C13RecipeMadness6Recipe", "NSSortDescriptor"]
+- ["C13RecipeMadness6Recipe", "RecipeIngredient"]
+- ["C13RecipeMadness6Recipe", "String"]
+- !private ["C13RecipeMadness6Recipe", "UIApplication"]
+- ["C13RecipeMadness6Recipe", "addIngredient"]
+- ["C13RecipeMadness6Recipe", "deinit"]
+- ["C13RecipeMadness6Recipe", "getIngredients"]
+- ["C13RecipeMadness6Recipe", "image"]
+- ["C13RecipeMadness6Recipe", "init"]
+- ["C13RecipeMadness6Recipe", "name"]
+- ["C13RecipeMadness6Recipe", "numServes"]
+- ["C13RecipeMadness6Recipe", "procedure"]
+- ["C13RecipeMadness6Recipe", "save"]
+- !private ["C13RecipeMadness16RecipeIngredient", "deinit"]
+- !private ["C13RecipeMadness16RecipeIngredient", "ingredient"]
+- !private ["C13RecipeMadness16RecipeIngredient", "quantity"]
+- !private ["C13RecipeMadness16RecipeIngredient", "recipe"]
+- !private ["Ps12SequenceType", "Element"]
+- !private ["Ps12SequenceType", "Generator"]
+- !private ["Ps12SequenceType", "Index"]
+- !private ["Ps12SequenceType", "SubSequence"]
+- !private ["Ps12SequenceType", "_Element"]
+- !private ["Ps12SequenceType", "init"]
+- !private ["Ps17SignedIntegerType", "Distance"]
+- !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
+- !private ["Ps16SignedNumberType", "Distance"]
+- !private ["Ps16SignedNumberType", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Distance"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["SS", "deinit"]
+- !private ["CSo13UIApplication", "delegate"]
+- !private ["CSo13UIApplication", "sharedApplication"]
+- !private ["PSo21UIApplicationDelegate", "managedObjectContext"]
+- !private ["CSo11UIResponder", "delegate"]
+- !private ["CSo11UIResponder", "managedObjectContext"]
+- !private ["CSo11UIResponder", "sharedApplication"]
+- !private ["Ps10_ArrayType", "Element"]
+- !private ["Ps10_ArrayType", "Generator"]
+- !private ["Ps10_ArrayType", "Index"]
+- !private ["Ps10_ArrayType", "SubSequence"]
+- !private ["Ps10_ArrayType", "_Element"]
+- !private ["Ps10_ArrayType", "init"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "Distance"]
+- !private ["Ps33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Generator"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps14_Incrementable", "Distance"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps22_IntegerArithmeticType", "Distance"]
+- !private ["Ps22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["Ps12_IntegerType", "Distance"]
+- !private ["Ps12_IntegerType", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Distance"]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "Generator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessAmbiguity", "Distance"]
+- !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["Ps12_Reflectable", "Distance"]
+- !private ["Ps12_Reflectable", "Element"]
+- !private ["Ps12_Reflectable", "Generator"]
+- !private ["Ps12_Reflectable", "Index"]
+- !private ["Ps12_Reflectable", "IntegerLiteralType"]
+- ["Ps12_Reflectable", "Some"]
+- !private ["Ps12_Reflectable", "SubSequence"]
+- !private ["Ps12_Reflectable", "_Element"]
+- !private ["Ps12_Reflectable", "init"]
+- !private ["Ps18_SignedIntegerType", "Distance"]
+- !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "C13RecipeMadness11AppDelegate"
+- !private "Sa"
+- !private "Ps23ArrayLiteralConvertible"
+- !private "Vs10ArraySlice"
+- !private "Ps22BidirectionalIndexType"
+- !private "Ps21BitwiseOperationsType"
+- "Ps11CVarArgType"
+- !private "Ps14CollectionType"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps23CustomStringConvertible"
+- !private "C13RecipeMadness9DBmanager"
+- "Ps9Equatable"
+- !private "Ps16ForwardIndexType"
+- !private "Ps13GeneratorType"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Vs17IndexingGenerator"
+- !private "Si"
+- !private "Ps21IntegerArithmeticType"
+- !private "Ps25IntegerLiteralConvertible"
+- !private "Ps11IntegerType"
+- !private "Ps14MirrorPathType"
+- !private "Ps21MutableCollectionType"
+- !private "Ps16MutableIndexable"
+- !private "Ps16MutableSliceable"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "CSo19NSEntityDescription"
+- !private "PSo17NSFastEnumeration"
+- !private "CSo14NSFetchRequest"
+- !private "PSo9NSLocking"
+- "CSo15NSManagedObject"
+- !private "CSo22NSManagedObjectContext"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "CSo24NSPersistentStoreRequest"
+- !private "CSo11NSPredicate"
+- !private "PSo14NSSecureCoding"
+- !private "CSo16NSSortDescriptor"
+- "Ps21NilLiteralConvertible"
+- "Sq"
+- !private "Ps21RandomAccessIndexType"
+- !private "Ps30RangeReplaceableCollectionType"
+- "C13RecipeMadness6Recipe"
+- !private "C13RecipeMadness16RecipeIngredient"
+- !private "Ps12SequenceType"
+- !private "Ps17SignedIntegerType"
+- !private "Ps16SignedNumberType"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "CSo13UIApplication"
+- !private "PSo21UIApplicationDelegate"
+- !private "CSo11UIResponder"
+- !private "Ps10_ArrayType"
+- !private "Ps33_BuiltinIntegerLiteralConvertible"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps14_Incrementable"
+- !private "Ps22_IntegerArithmeticType"
+- !private "Ps12_IntegerType"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessAmbiguity"
+- "Ps12_Reflectable"
+- !private "Ps18_SignedIntegerType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "1dd28972630a51c17990060e148fe591"

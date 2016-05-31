@@ -1,0 +1,5 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "6c7a997a49e60417d9a2f7b1064cdb1e"
+build_time: [518013345, 945913000]
+inputs:
+  "/Users/dineshkumardhanekula/Downloads/tejesh143-recipe-madness-164b1d439b39/RecipeMadnessTests/RecipeMadnessTests.swift": [483235246, 0]

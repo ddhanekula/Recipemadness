@@ -1,0 +1,8 @@
+[
+ {
+  "file": "/Users/dineshkumardhanekula/Downloads/tejesh143-recipe-madness-164b1d439b39/RecipeMadness/ShoppingListController.swift",
+  "offset": 11340,
+  "remove": 404,
+  "text": "let customView:UIView = UIView (frame: CGRectMake(0, 100, 320, 160))\n        customView.backgroundColor = appy.dateViewBackground\n        datePicker = UIDatePicker(frame: CGRectMake(0, 0, 320, 160))\n        datePicker.datePickerMode = UIDatePickerMode.Date\n        datePicker.minimumDate = NSDate()\n        customView.addSubview(datePicker)\n        return customView\n    }\n    \n    func setDoneButton(var,",
+ }
+]
